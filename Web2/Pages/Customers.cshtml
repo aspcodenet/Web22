@@ -1,0 +1,14 @@
+﻿@page
+@model Web2.Pages.CustomersModel
+@{
+}
+
+
+<table class="table">
+    @foreach (var cust in @Model.Customers)
+    {
+        <tr>
+            <td>@cust.Emailaddress</td>
+        </tr>
+    }
+</table>
